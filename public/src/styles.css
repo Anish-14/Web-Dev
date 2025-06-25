@@ -1,0 +1,208 @@
+#watch-later{
+    position:relative;
+}
+
+
+
+#watch-later-count{
+background-color: #ff3b3b;
+color: #fff;
+border-radius: 50%;
+    position: absolute;
+    right:-12px;
+    top:-10px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px #0008;
+}
+
+.card-image{
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+.card-img-top {
+    object-fit: cover;
+    height: 200px !important;
+    background: #23272a;
+}
+.card{
+    background: #23272a;
+    color: #e4e6eb;
+    border: 1px solid #333;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px #0006;
+    transition: transform 0.2s, box-shadow 0.2s;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 6px 24px #000a;
+}
+
+/* Grid layout for video cards */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+/* Custom Navbar Styles for Dark Mode */
+.custom-navbar {
+  width: 100vw;
+  background: #23272a;
+  color: #e4e6eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 2rem;
+  box-shadow: 0 2px 8px #0006;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-logo a {
+  color: #61dafb;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #e4e6eb;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-link:hover, .nav-link.active {
+  background: #181a1b;
+  color: #61dafb;
+}
+
+.navbar-timer {
+  margin-left: 2rem;
+}
+
+.nav-watch-later {
+  position: relative;
+  padding-right: 2.5rem;
+}
+
+#watch-later-count {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.2rem;
+}
+
+/* Custom Footer Styles for Dark Mode */
+.custom-footer {
+  width: 100vw;
+  background: #23272a;
+  color: #e4e6eb;
+  border-top: 1px solid #333;
+  padding: 2rem 0 1rem 0;
+  margin-top: 3rem;
+  text-align: center;
+}
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.footer-content p {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 0.5rem;
+}
+.footer-links a {
+  color: #61dafb;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+.footer-links a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Video Card Redesign for Dark Mode */
+.video-card {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #61dafb;
+  margin-bottom: 0.2rem;
+}
+.channel-name {
+  font-size: 1rem;
+  font-style: italic;
+  color: #b0b3b8;
+  margin-bottom: 0.2rem;
+}
+.video-meta {
+  font-size: 0.95rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+.card-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.like-btn, .remove-btn, .watchlater-btn {
+  background: #181a1b;
+  color: #e4e6eb;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.like-btn.liked {
+  color: #ff3b3b;
+  border-color: #ff3b3b;
+  background: #23272a;
+}
+.like-btn:hover, .remove-btn:hover, .watchlater-btn:hover {
+  background: #23272a;
+  color: #61dafb;
+  border-color: #61dafb;
+}
+.watchlater-btn.saved {
+  color: #61dafb;
+  border-color: #61dafb;
+  background: #23272a;
+}
